@@ -1,0 +1,9 @@
+out/
+work/
+*.apk
+*.zip
+*.dex
+*.pk8
+*.x509.pem
+*.log
+.DS_Store
