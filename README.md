@@ -9,9 +9,9 @@
 > You patch **your own** APK, you sign it with **your own** key, you flash it at **your own risk**.
 
 Replaces the Xiaomi stylus charging bubble (the little "battery + %" popup) with an animated
-**Smart Pen** HUD: a white tile dropping in from the real top edge of the screen, the title
-shrinking, a hand-drawn Xiaomi pen gauge (grey shell, fully rounded fill, thin nub) and a
-~0.6 s charge fill animation.
+**Smart Pen** HUD **inspired by the iPadOS Apple Pencil charging overlay**: a white tile
+dropping in from the real top edge of the screen, the title shrinking, a hand-drawn Xiaomi pen
+gauge (grey shell, fully rounded fill, thin nub) and a ~0.6 s charge fill animation.
 
 ![HUD](docs/hero.png)
 
@@ -175,6 +175,17 @@ If the device does not boot, see [SAFETY.md](SAFETY.md).
   proprietary application. Share the script, not the binary.
 - **Never publish** your `platform.pk8`: it signs every system APK of your ROM.
 - The hidden-API whitelist shipped here is the AOSP file (Apache-2.0) plus one line.
+
+## Credits / inspiration
+
+- The interaction and the look are **inspired by the iPadOS Apple Pencil charging HUD**
+  (a pill that slides down from the top edge, shows the pen and its battery, then leaves).
+  This project only borrows the *idea*: no Apple asset, font, colour file or code is used.
+  Everything is drawn at runtime or taken from the Xiaomi app already installed on the device.
+- Gauge geometry follows a personal HTML/CSS mock-up; the pen shell, the rounded fill and the
+  nub are drawn by hand in `onDraw`.
+- Typography is MiSans (the HyperOS system font), not SF.
+- Not affiliated with, endorsed by, or supported by Xiaomi or Apple.
 
 ## License
 

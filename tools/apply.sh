@@ -123,7 +123,7 @@ name=$MODULE_NAME
 version=$VERSION
 versionCode=1
 author=smartpen-charge-hud
-description=Smart Pen charging HUD for Xiaomi tablets. Replaces MiuiStylusLevelsView with a native-looking drop-in tile and a hand-drawn Xiaomi pen gauge. Built locally from the user's own SecurityCoreAdd.apk; no Xiaomi files are redistributed. Disable the module and reboot to roll back.
+description=Smart Pen charging HUD for Xiaomi tablets, inspired by the iPadOS Apple Pencil overlay. Replaces MiuiStylusLevelsView with a slide-in tile from the top edge and a hand-drawn Xiaomi pen gauge. Built locally from the user's own SecurityCoreAdd.apk; no Xiaomi files are redistributed. Disable the module and reboot to roll back.
 EOF
 ZIP="$OUT/${MODULE_ID}_${VERSION}.zip"
 ( cd "$MOD" && rm -f "$ZIP" && zip -qr "$ZIP" module.prop system )
