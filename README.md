@@ -176,6 +176,22 @@ If the device does not boot, see [SAFETY.md](SAFETY.md).
 - **Never publish** your `platform.pk8`: it signs every system APK of your ROM.
 - The hidden-API whitelist shipped here is the AOSP file (Apache-2.0) plus one line.
 
+## Built with AI
+
+Most of the code and documentation here was written with AI assistants, then tested on a real
+device:
+
+- **Claude (Anthropic)** — first versions of the HUD, the dex-patch pipeline, the window
+  expansion trick and the animation curve tuning;
+- **DeepSeek (V4.1 Flash)** — later iterations: faster gauge fill (~0.6 s), higher resting
+  position, and the packaging of this repository (anchor-based patcher, `--dry-run`,
+  `SAFETY.md`, English docs).
+
+Design choices, screenshots, on-device testing and every "does it look right?" decision were
+made by the maintainer on a Xiaomi Pad 6. AI assistants are tools, not authors: the person who
+publishes and supports this repo remains responsible for what it does — hence the MIT license
+and the warnings in [SAFETY.md](SAFETY.md).
+
 ## Credits / inspiration
 
 - The interaction and the look are **inspired by the iPadOS Apple Pencil charging HUD**
