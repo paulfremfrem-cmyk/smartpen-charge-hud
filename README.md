@@ -190,7 +190,7 @@ device:
 Design choices, screenshots, on-device testing and every "does it look right?" decision were
 made by the maintainer on a Xiaomi Pad 6. AI assistants are tools, not authors: the person who
 publishes and supports this repo remains responsible for what it does — hence the MIT license
-and the warnings in [SAFETY.md](SAFETY.md).
+and the warnings in [SAFETY.md](SAFETY.md). Details in [AUTHORS.md](AUTHORS.md).
 
 ## Credits / inspiration
 

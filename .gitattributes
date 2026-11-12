@@ -1,0 +1,6 @@
+# The smali file is generated from the Java source (javac -> d8 -> apktool),
+# so keep it out of the language statistics.
+smali/**/*.smali linguist-generated=true
+
+# Screenshots / documentation assets
+docs/** linguist-documentation
